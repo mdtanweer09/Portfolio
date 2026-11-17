@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohammad Tanweer | Data Analyst</title>
+  <meta name="description" content="Portfolio of Mohammad Tanweer, a fresher data analyst skilled in Python, SQL, Power BI and Tableau.">
+  <meta name="keywords" content="Data Analyst, Python, SQL, Power BI, Tableau, Excel, Mohammad Tanweer, Portfolio, Resume, Projects">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+  document.documentElement.classList.add("js");
+  var savedTheme = null;
+  try { savedTheme = localStorage.getItem("theme"); } catch (e) {}
+  document.documentElement.setAttribute("data-theme", savedTheme || "dark");
+</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#home">M<span>T</span></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#technicalSkills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch to light mode">
+  <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+  <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+</button>
+  </header>
+
+  <main id="main">
+    <!-- 1. HERO with profile photo -->
+    <section class="hero" id="home">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <p class="status"><span class="dot"></span>Open to entry-level data analyst roles</p>
+          <h1>Hi, I'm <span class="neon">Mohammad</span> <span style="color: #c943b3; font-weight: bold;">Tanweer</span></h1>
+          <p class="role">
+            <span class="role-dot" aria-hidden="true"></span>
+            <span class="sr-only">Data Analyst / Python Programmer / Power BI / SQL / Excel</span>
+            <span class="typing" aria-hidden="true"><span id="typed"></span><span class="caret"></span></span>
+          </p>
+          <p class="lead">I turn raw data into clear dashboards and decisions using <span style="color: rgb(151, 59, 151); font-weight: bold;">Python</span>, <span style="color: blue; font-weight: bold;">SQL</span>, <span style="color: green; font-weight: bold;">Excel</span> and <span style="color: yellow; font-weight: bold;">Power Bi</span>, and I write clean code to automate the work.</p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">View projects</a>
+            <a class="btn" href="#resume">See resume</a>
+            <a class="btn" href="#contact">Hire me</a>
+          </div>
+          <p></p>
+          <div class="social">
+            <a href="https://www.linkedin.com/in/tanweer09" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="assets/linkedin.svg" alt=""></a>
+            <a href="https://github.com/mdtanweer09" target="_blank" rel="noopener" aria-label="GitHub"><img src="assets/github.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="photo-wrap">
+          <div class="photo">
+            <div class="photo-inner">
+              <span class="initials" aria-hidden="true">MT</span>
+              <!-- Put your photo at assets/profile.jpg (portrait, about 800x1000) -->
+              <img src="assets/profile.jpeg" alt="Photo of MT" width="380" height="480" onerror="this.remove()">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SKILLS: strip that moves right to left (edit the list in script.js) -->
+    <section class="marquee" id="skills" aria-label="Skills">
+      <ul class="track" id="skillTrack"></ul>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap about">
+        <h2>About me</h2>
+        <div>
+          <h3><span class="neon">Who I am</span></h3>
+          <p>I'm a Computer Science Engineering graduate with a strong interest in Data Analytics and transforming raw data into meaningful insights.</p>
+          <p>With hands-on project experience in Python, SQL, Power BI, Excel, and Tableau, I enjoy cleaning, exploring, analyzing, and visualizing data to solve business problems.</p>
+          <p>I'm continuously learning and building practical projects to strengthen my analytical skills, and I'm eager to start my professional journey as a Data Analyst.</p>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="technicalSkills" class="section alt">
+      <div class="wrap">
+        <h2>Technical skills</h2>
+        <div class="grid skills">
+          <div class="card"><h3>Programming</h3><ul class="chips"><li data-icon="python">Python</li><li data-icon="java">Java</li></ul></div>
+          <div class="card"><h3>Data analytics</h3><ul class="chips"><li data-icon="sql">SQL</li><li data-icon="excel">Excel</li><li data-icon="powerbi">Power BI</li></ul></div>
+          <div class="card"><h3>Libraries</h3><ul class="chips"><li data-icon="pandas">Pandas</li><li data-icon="numpy">NumPy</li><li data-icon="matplotlib">Matplotlib</li></ul></div>
+          <div class="card"><h3>Databases</h3><ul class="chips"><li data-icon="postgresql">PostgreSQL</li><li data-icon="mysql">MySQL</li></ul></div>
+          <div class="card"><h3>Tools</h3><ul class="chips"><li data-icon="git">Git</li><li data-icon="github">GitHub</li><li data-icon="jupyter">Jupyter Notebook</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 4. PROJECTS with technology logos (edit data-tech as "Label:logo-name,...") -->
+    <section id="projects" class="section alt">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <p class="sub">Here are some of the projects I've worked on, showcasing my skills in data analysis and visualization.</p>
+        <div class="projects">
+
+          <article class="project">
+            <img src="assets/customer_behavior_dashboard.png" alt="Dashboard screenshot for Project One" width="640" height="400" loading="lazy">
+            <div class="project-body">
+              <h3>Customer Shopping Behavior Analysis</h3>
+              <ul class="tech" data-tech="Python:python,PostgreSQL:postgresql, SQL:sql, Power BI:powerbi"></ul>
+              <p>An end-to-end analysis of customer shopping data. Python cleans and explores the data, PostgreSQL and SQL answer the business questions, and Power BI presents the results in an interactive dashboard.</p>
+              
+              <a class="btn" href="https://github.com/mdtanweer09/customer-shopping-behavior" target="_blank" rel="noopener" ><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <img src="assets/student_sale_performance.png" alt="Chart screenshot for Project Two" width="640" height="400" loading="lazy">
+            <div class="project-body">
+              <h3>Student Sales Performance Dashboard — Excel</h3>
+              <ul class="tech" data-tech="Excel:microsoftexcel"></ul>
+              <p>Analyzed student sales performance data and created an interactive Excel dashboard to visualize key metrics, trends, and insights for better decision-making.</p>
+              <a class="btn" href="https://github.com/mdtanweer09/student-sales-performance-dashboard" target="_blank" rel="noopener" ><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+          </article>
+
+          <!-- <article class="project">
+            <img src="assets/project-3.png" alt="Screenshot for Project Three" width="640" height="400" loading="lazy">
+            <div class="project-body">
+              <h3>SQL analysis of [dataset name]</h3>
+              <ul class="tech" data-tech="SQL:mysql,Excel:microsoftexcel,GitHub:github"></ul>
+              <dl>
+                <dt>Question</dt><dd>What the business wanted to know.</dd>
+                <dt>Data</dt><dd>Source, size, and how you cleaned it.</dd>
+                <dt>Method</dt><dd>The analysis steps you took.</dd>
+                <dt>Finding</dt><dd>Your main insight, with a number.</dd>
+                <dt>Result</dt><dd>What someone could do because of it.</dd>
+              </dl>
+              <p class="links"><a href="#" target="_blank" rel="noopener">GitHub</a></p>
+            </div>
+          </article> -->
+
+        </div>
+      </div>
+    </section>
+
+   <!-- 3. RESUME -->
+<section id="resume" class="section">
+  <div class="wrap">
+    <div class="resume-head">
+      
+      <h2>My <span class="neon">Resume</span></h2>
+    </div>
+
+    <div class="resume">
+      <div class="highlights">
+        <h3>Resume highlights</h3>
+        <ul>
+          <li><span><strong>B.Tech in Computer Science & Engineering</strong>Academic foundation in computer science and analytical problem-solving.</span></li>
+          <li><span><strong>Data Analysis & Querying</strong>Working knowledge of Python, SQL and PostgreSQL for data exploration and analysis.</span></li>
+          <li><span><strong>Business Intelligence & Visualization</strong>Hands-on project experience building interactive dashboards using Power BI and Excel.</span></li>
+          <li><span><strong>Data-Driven Insights</strong>Proven ability to extract actionable insights from data and communicate them effectively.</span></li>
+          <li><span><strong>Continuous Learning</strong>Commitment to staying updated with the latest trends and technologies in the field of data analysis.</span></li>
+        </ul>
+      </div>
+
+      <div class="card resume-card">
+        <div class="rc-top">
+          <div class="rc-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
+          </div>
+          <div>
+            <h3>Mohammad Tanweer</h3>
+            <p>Data Analyst · Computer Science Engineer</p>
+          </div>
+        </div>
+        <p>Preview or download my full resume to see my education, technical skills, projects and certifications.</p>
+        <div class="rc-actions">
+          <button class="btn primary" id="viewResume" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Resume
+          </button>
+          <a class="btn" href="assets/resume.pdf" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>
+            Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pop-up PDF preview -->
+  <dialog class="resume-dialog" id="resumeDialog" aria-labelledby="dlgTitle">
+    <div class="dlg-bar">
+      <h3 id="dlgTitle">Resume preview</h3>
+      <div>
+        <a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener">Open in new tab</a>
+        <button class="btn" type="button" id="closeResume">Close</button>
+      </div>
+    </div>
+    <iframe class="dlg-frame" id="resumeFrame" title="Resume PDF"></iframe>
+  </dialog>
+</section>
+
+    <!-- EDUCATION + CERTIFICATIONS -->
+    <section id="education" class="section alt">
+      <div class="wrap edu">
+        <div>
+          <h2>Education</h2>
+          <ol class="timeline">
+            <li>
+              <h3>Bachelor of Technology in Computer Science and Engineering </h3>
+              <p class="when">Technocrats Institute Of Technology Excellence, Bhopal</p>
+            </li>
+            <li><h3>Diploma in Computer Science and Technology</h3><p class="when">Siliguri Government Polytechnic, Siliguri</p></li>
+            <li><h3>Class 10</h3><p class="when">Awadhoot Academy, Munger, Bihar</p></li>
+          </ol>
+        </div>
+        <!-- <div>
+          <h2>Certifications</h2>
+          <ul class="certs">
+            <li><strong>Google Data Analytics Certificate</strong> Coursera, 2025</li>
+            <li><strong>SQL course name</strong> Platform, Year</li>
+            <li><strong>Power BI or Tableau course</strong> Platform, Year</li>
+          </ul>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="wrap">
+    <div class="contact-head">
+      <h2>Get in touch</h2>
+      <p>Hiring for a data analyst role or have a project in mind? I'd love to hear from you.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Contact information</h3>
+        <ul class="info-list">
+          <li>
+            <a class="info-card" href="mailto:mdtanweeraj@gmail.com">
+              <span class="info-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
+              <span><small>Email</small>mdtanweeraj@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <div class="info-card">
+              <span class="info-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+              <span><small>Location</small>[City, Country]</span>
+            </div>
+          </li>
+          <li>
+            <a class="info-card" href="tel:+910000000000">
+              <span class="info-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+              <span><small>Phone</small>[+91-0000000000]</span>
+            </a>
+          </li>
+        </ul>
+
+        <h3>Connect with me</h3>
+        <div class="social">
+          <a href="https://github.com/mdtanweer09" target="_blank" rel="noopener" aria-label="GitHub"><img src="assets/github.svg" alt=""></a>
+          <a href="https://www.linkedin.com/in/tanweer09" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="assets/linkedin.svg" alt=""></a>
+        </div>
+      </div>
+
+      <form class="form" id="contactForm" action="https://formspree.io/f/mrpqqgnr" method="POST">
+        <label>Name *
+          <input type="text" name="name" placeholder="Your name" autocomplete="name" required>
+        </label>
+        <label>Email *
+          <input type="email" name="email" placeholder="your.email@example.com" autocomplete="email" required>
+        </label>
+        <label>Subject *
+          <input type="text" name="subject" placeholder="What's this about?" required>
+        </label>
+        <label>Message *
+          <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
+        </label>
+        <button class="btn primary" type="submit"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send message</button>
+        <p class="status-msg" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+  <!-- 5. FOOTER: quick links + contact details -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="brand" href="#home">Mohammad<span>Tanweer</span></a>
+        <p>Fresher data analyst turning raw data into clear decisions.</p>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#technicalSkills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact details</h3>
+        <ul>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:mdtanweeraj@gmail.com">mdtanweeraj@gmail.com</a></li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+91 9199101217">+91 9199101217</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> Bhopal, Madhya Pradesh, India</li>
+          <div class="social">
+            <a href="https://www.linkedin.com/in/tanweer09" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="assets/linkedin.svg" alt=""></a>
+            <a href="https://github.com/mdtanweer09" target="_blank" rel="noopener" aria-label="GitHub"><img src="assets/github.svg" alt=""></a>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom"><p>&copy; <span id="year"></span> Mohammad Tanweer. All rights reserved.</p> <p>Made with ❤️ by Mohammad Tanweer</p>
+      <a href="#home">Back to top</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
